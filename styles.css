@@ -1,0 +1,208 @@
+/* Resetting some default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Soft grayish background */
+  color: #333;
+}
+
+header {
+  background-color: #000; /* Changing the background to black */
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #fff; /* Changing header text to white for better contrast */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Show only the active section */
+section.hidden {
+  display: none;
+}
+
+/* Styling for active section */
+section:not(.hidden) {
+  display: block;
+}
+
+/* Additions and modifications to the previous CSS */
+
+/* Product styling */
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.product button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #45a049;
+}
+
+/* Adjustments for product grid layout */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creating a 4x4 grid */
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Additional styles for image and logo section */
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Section content styling */
+.section-content {
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Adjustments for social media grid layout */
+
+/* Adjustments to remove the container box */
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+  gap: 20px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.social-item img {
+  width: 120px; /* Adjust the size of social media logos */
+  height: 120px;
+  object-fit: contain;
+}
+
+.social-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.social-details h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.social-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-details a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.social-details a:hover {
+  background-color: #45a049;
+}
