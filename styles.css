@@ -206,3 +206,24 @@ section img {
 .social-details a:hover {
   background-color: #45a049;
 }
+
+/* Adjustments for responsiveness */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .social-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .social-item img {
+    width: 100%; /* Take full width of container */
+    max-width: 200px; /* Limit image width */
+    height: auto;
+    object-fit: contain;
+  }
+}
